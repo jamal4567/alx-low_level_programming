@@ -12,7 +12,7 @@ int main(void)
 	unsigned long f1_half1, f1_half2, f2_half1, f2_half2;
 	unsigned long half1, half2;
 
-	for (i = 0; i < 93; i++)
+	for (i = 0; i < 92; i++)
 	{
 		sum = f1 + f2;
 		printf("%lu, ", sum);
