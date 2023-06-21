@@ -26,7 +26,7 @@ int main(void)
 	for (i = 93; i < 99; i++)
 	{
 		half1 = f1_half1 + f2_half1;
-		half1 = f1_half1 + f2_half1;
+		half2 = f1_half2 + f2_half2;
 		if (f1_half2 + f2_half2 > 9999999999)
 		{
 			half1 += 1;
