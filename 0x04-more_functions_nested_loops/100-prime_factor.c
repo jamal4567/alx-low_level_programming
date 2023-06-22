@@ -2,7 +2,7 @@
 /**
  *main - largest prime factor of the number
  *
- *
+ *Return:0
  */
 int main(void)
 {
