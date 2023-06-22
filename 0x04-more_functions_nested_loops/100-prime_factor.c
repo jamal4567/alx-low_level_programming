@@ -6,16 +6,25 @@
  */
 int main(void)
 {
-	long int a = 612852475143;
 	long int i;
+	long int n = 612852475143;
+	long int lg = -1;
 
-	for (i = 2; i < a; i++)
+	while (lg % 2 == 0)
 	{
-		if (a % i == 0)
+		lg = 2;
+		n /= 2;
+	}
+	for (i = 3; i <= n*n; i = i + 2)
+	{
+		while(n % i == 0)
 		{
-			a = a / i;
+			lg = i;
+			n = n / i;
 		}
 	}
-	printf("largest prime factor is :%ld\n", i);
+	if (n > 2)
+		lg = n;
+	printf("largest prime factor is :%ld\n", lg);
 	return (0);
 }
