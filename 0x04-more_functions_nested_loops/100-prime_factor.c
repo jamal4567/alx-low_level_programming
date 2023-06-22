@@ -8,16 +8,16 @@ int main(void)
 {
 	long int i;
 	long int n = 612852475143;
-	long int lg = -1;
+	long int lg = 0;
 
 	while (lg % 2 == 0)
 	{
 		lg = 2;
 		n /= 2;
 	}
-	for (i = 3; i <= n*n; i = i + 2)
+	for (i = 3; i * i <= n; i = i + 2)
 	{
-		while(n % i == 0)
+		while (n % i == 0)
 		{
 			lg = i;
 			n = n / i;
