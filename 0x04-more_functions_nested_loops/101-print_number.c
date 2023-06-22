@@ -1,5 +1,8 @@
 #include "main.h"
-/*****/
+/**
+ *print_number - print an integer
+ *@n:integer
+ */
 void print_number(int n)
 {
 	unsigned int i;
@@ -9,7 +12,7 @@ void print_number(int n)
 		i = -n;
 		_putchar('-');
 	}
-	else 
+	else
 		i = n;
 	if (i / 10)
 	{
