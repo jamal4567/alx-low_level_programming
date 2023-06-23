@@ -5,7 +5,7 @@
  *
  *Return:0
  */
-int main()
+int main(void)
 {
 	long int n;
 	long int lg;
@@ -19,7 +19,7 @@ int main()
 		lg = 2;
 		n /= 2;
 	}
-	for (i = 3; i <= sqrt(n); i = i+2)
+	for (i = 3; i <= sqrt(n); i = i + 2)
 	{
 		while (n % i == 0)
 		{
