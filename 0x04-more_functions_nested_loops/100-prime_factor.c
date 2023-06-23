@@ -9,7 +9,7 @@ int main(void)
 {
 	long int n;
 	long int lg;
-	long i;
+	long int i;
 
 	n = 612852475143;
 	lg = -1;
@@ -27,6 +27,9 @@ int main(void)
 			n = n / i;
 		}
 	}
+	if (n > 2)
+		lg = n;
+
 	printf("%ld\n", lg);
 	return (0);
 }
