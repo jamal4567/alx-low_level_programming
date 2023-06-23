@@ -13,7 +13,7 @@ int main(void)
 
 	n = 612852475143;
 	lg = -1;
-	while (lg % 2 == 0)
+	while (n % 2 == 0)
 	{
 		lg = 2;
 		n /= 2;
