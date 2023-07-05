@@ -15,8 +15,7 @@ int factorial(int n)
 	{
 		return (-1);
 	}
-
-	return 
+	return
 		n = n * factorial(n - 1);
 	_putchar('\n');
 }
