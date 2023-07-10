@@ -8,7 +8,7 @@
  *Return: result
  *
  */
- char *str_concat(char *s1, char *s2)
+char *str_concat(char *s1, char *s2)
 {
 	unsigned int i, j, k, li;
 	char *C;
@@ -45,6 +45,6 @@
 		j++;
 	}
 	C[k] = '\0';
-	return(C);
+	return (C);
 
 }
