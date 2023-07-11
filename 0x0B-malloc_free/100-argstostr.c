@@ -1,6 +1,12 @@
 #include "main.h"
 #include <stdlib.h>
-/********/
+/**
+ **argstostr - concatenates all arguments
+ *@ac: arguments
+ *@av: counter
+ *
+ *Return: result string
+ */
 char *argstostr(int ac, char **av)
 {
 	int i, j, k = 0, len = 1;
