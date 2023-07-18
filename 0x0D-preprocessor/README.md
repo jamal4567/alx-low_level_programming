@@ -20,21 +20,22 @@
 ## TASKS
 
    * FILE [0. Object-like Macro.h](https://github.com/jamal4567/alx-low_level_programming/blob/master/0x0D-preprocessor/0-object_like_macro.h)
-          + header file that defines a macro named SIZE as an abbreviation for the token 1024.
+
+######           header file that defines a macro named SIZE as an abbreviation for the token 1024.
 
    * FILE [1-pi.h](https://github.com/jamal4567/alx-low_level_programming/blob/master/0x0D-preprocessor/1-pi.h)
 
-          + header file that defines a macro named PI as an abbreviation for the token 3.14159265359.
+######           header file that defines a macro named PI as an abbreviation for the token 3.14159265359.
 
    * FILE [2-main.c](https://github.com/jamal4567/alx-low_level_programming/blob/master/0x0D-preprocessor/2-main.c)
 
-          + program that prints the name of the file it was compiled from, followed by a new line.
+######           program that prints the name of the file it was compiled from, followed by a new line.
 
    * FILE [3-function_like_macro.h](https://github.com/jamal4567/alx-low_level_programming/blob/master/0x0D-preprocessor/3-function_like_macro.h)
 
-          + function-like macro ABS(x) that computes the absolute value of a number x.
+######           function-like macro ABS(x) that computes the absolute value of a number x.
 
    * FILE [4-sum.h](https://github.com/jamal4567/alx-low_level_programming/blob/master/0x0D-preprocessor/4-sum.h)
 
-          + function-like macro SUM(x, y) that computes the sum of the numbers x and y.
+######           function-like macro SUM(x, y) that computes the sum of the numbers x and y.
 
