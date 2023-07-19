@@ -5,7 +5,7 @@
  *@argv: arguments
  *Return: 0 success
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 	int (*operator)(int, int);
 	int calc, num1, num2;
