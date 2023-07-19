@@ -15,6 +15,11 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(98);
 	}
+	if (argv[1][2])
+	{
+		printf("Error\n");
+		exit(98);
+	}
 	operator = get_op_func(argv[2]);
 
 	if (!operator)
