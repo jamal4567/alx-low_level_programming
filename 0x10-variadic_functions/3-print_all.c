@@ -8,15 +8,14 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	int i;
-	const char *separator = "";
+	int i = 0;
+	char *separator = "";
 	char *str;
 
 	va_start(args, format);
 
 	if (format)
 	{
-		i = 0;
 		while (format[i])
 		{
 			switch (format[i])
