@@ -7,12 +7,10 @@
  */
 void print_all(const char * const format, ...)
 {
+	va_list args
 	int i;
 	const char *separator = "";
 	char *str;
-
-
-	va_list args;
 
 	va_start(args, format);
 	i = 0;
@@ -35,8 +33,7 @@ void print_all(const char * const format, ...)
 				str = va_arg(args, char *);
 				if (str)
 					printf("%s%s", separator, str);
-				else
-					printf("(nil)");
+				str = "(nil)";
 				break;
 			default:
 				i++;
