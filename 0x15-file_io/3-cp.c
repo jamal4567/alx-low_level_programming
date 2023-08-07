@@ -7,7 +7,7 @@
  */
 int main(int ac, char **av)
 {
-	int file_from, file_to;
+	int file_from = 0, file_to = 0;
 	ssize_t nb;
 	char buffer[1024];
 
