@@ -5,9 +5,9 @@
  *@av:srguments
  *Return: 0 success
  */
-int main(int ac, char **av)
+int main(int ac, char *av[])
 {
-	int file_from = 0, file_to = 0;
+	int file_from, file_to;
 	ssize_t nb;
 	char buffer[1024];
 
@@ -18,7 +18,7 @@ int main(int ac, char **av)
 	if (file_from < 0)
 	{dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]);
 		exit(98); }
-	file_to = open(av[2], O_CREAT | O_WRONLY | O_TRUNC | 0664);
+	file_to = open(av[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (file_to < 0)
 	{dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
 		exit(99); }
@@ -26,7 +26,6 @@ int main(int ac, char **av)
 		if (write(file_to, buffer, nb) != nb)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
-			close(file_from);
 			exit(99);
 		}
 	if (nb < 0)
@@ -36,12 +35,12 @@ int main(int ac, char **av)
 	}
 	file_from = close(file_from);
 	file_to = close(file_to);
-	if (file_from < 0)
+	if (file_from)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from);
 		exit(100);
 	}
-	if (file_to < 0)
+	if (file_to)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_to);
 		exit(100);
