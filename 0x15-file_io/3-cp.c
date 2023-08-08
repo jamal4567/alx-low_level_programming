@@ -26,6 +26,7 @@ int main(int ac, char **av)
 		if (write(file_to, buffer, nb) != nb)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
+			close(file_from);
 			exit(99);
 		}
 	if (nb < 0)
